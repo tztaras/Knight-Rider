@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+}
