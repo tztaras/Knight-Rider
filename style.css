@@ -7,9 +7,9 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: fit-content;
     width: 80%;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .k-r {
@@ -19,8 +19,18 @@ body {
     border: 2px solid black;
     box-shadow: 0px 0px 20px rgba(236, 50, 50, 0.829);
     border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .k-r>span {
-    display: flex;
+
+    width: 9.5%;
+    height: 40px;
+    margin: 1px 1.5%;
+    border-radius: 6px;
+    background-color: brown;
+    justify-content: center;
+    align-items: center;
 }
