@@ -8,7 +8,7 @@ body {
 
 .container {
     max-width: fit-content;
-    width: 80%;
+    /* width: 80%; */
     margin: 0px auto;
 }
 
@@ -16,21 +16,25 @@ body {
     width: 80%;
     height: 50px;
     margin: 90px auto;
-    border: 2px solid black;
-    box-shadow: 0px 0px 20px rgba(236, 50, 50, 0.829);
-    border-radius: 6px;
+    /* border: 2px solid black; */
+    /* box-shadow: 0px 0px 20px rgba(236, 50, 50, 0.829); */
+    /* border-radius: 6px; */
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .k-r>span {
 
+
     width: 9.5%;
-    height: 40px;
+    height: 34px;
     margin: 1px 1.5%;
     border-radius: 6px;
-    background-color: brown;
+    background-color: rgb(255, 0, 0);
+    /* box-shadow: 0px 0px 30px rgb(236, 50, 50); */
     justify-content: center;
     align-items: center;
+    filter: contrast(45%);
 }
