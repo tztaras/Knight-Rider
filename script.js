@@ -30,7 +30,7 @@ function animation() {
     kRspan[brick].style.boxShadow = '0px 0px 30px rgb(246, 50, 50)';
     
     brick += direction;
-    console.log(brick);
+    // console.log(brick);
    
 
     setTimeout(animation, 700);
