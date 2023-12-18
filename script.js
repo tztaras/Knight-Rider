@@ -21,19 +21,21 @@ function animation() {
     }
 
     kRspan.forEach((item) => {
-        item.style.filter = 'contrast(45%)';
-        item.style.boxShadow = 'none';
+        item.style.filter = 'contrast(50%)';
+        item.style.boxShadow = 'inset 0 0 10px 4px #000000';
+        item.style.border = 'none';
     });
 
 
-    kRspan[brick].style.filter = 'contrast(150%)';
-    kRspan[brick].style.boxShadow = '0px 0px 30px rgb(246, 50, 50)';
+    kRspan[brick].style.filter = 'contrast(200%)';
+    kRspan[brick].style.border = '1px solid rgb(255, 0, 0)';
+    kRspan[brick].style.boxShadow = '0px 0px 50px 20px rgb(161, 0, 0), inset 0px 0px 15px 15px rgb(161, 0, 0)';
     
     brick += direction;
     // console.log(brick);
    
 
-    setTimeout(animation, 700);
+    setTimeout(animation, 600);
 
 
 }
