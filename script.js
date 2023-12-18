@@ -8,10 +8,15 @@ let kR = document.querySelector('.k-r');
 
 
 let brick = 0;
+console.dir(brick);
 let direction = 1;
 let kRspan = document.querySelectorAll('.k-r > span');
 function animation() {
     if (brick === kRspan.length-1) {
+        direction *= -1;
+    }
+    else if (brick === -1) {
+        brick = 1;
         direction *= -1;
     }
 
