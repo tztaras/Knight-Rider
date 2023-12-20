@@ -8,12 +8,11 @@ let kR = document.querySelector('.k-r');
 
 
 let brick = 0;
-
 let direction = 1;
 
 let kRspan = document.querySelectorAll('.k-r > span');
-function animation() {
-    if (brick === kRspan.length-1) {
+(function animation() {
+    if (brick === kRspan.length - 1) {
         direction *= -1;
     }
     else if (brick === -1) {
@@ -29,11 +28,11 @@ function animation() {
     });
     
 
-    if (direction === 1 || brick===kRspan.length-1) { 
+    if (direction === 1 || brick === kRspan.length - 1) {
         kRspan[brick].style.boxShadow = '-15px 0px 47px 25px rgb(161, 0, 0), inset 0px 0px 10px 15px rgb(161, 0, 0)';
     } else {
         kRspan[brick].style.boxShadow = '15px 0px 47px 25px rgb(161, 0, 0), inset 0px 0px 10px 15px rgb(161, 0, 0)';
-    } 
+    }
 
     kRspan[brick].style.filter = 'contrast(200%)';
     kRspan[brick].style.border = '1px solid rgb(255, 0, 0)';
@@ -41,17 +40,13 @@ function animation() {
     
     brick += direction;
     
-
     setTimeout(animation, 500);
 
-
-}
-
-animation();
-
+})();
 
 
 let audio = new Audio('./audio/Intro.mp3');
+
 function playMusic() {
     
     if (!audio || audio.paused) {
@@ -63,7 +58,6 @@ function playMusic() {
     }
     
 }
-
 
 let m = document.querySelectorAll('.k-r > span');
 m.forEach(span => {
