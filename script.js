@@ -29,7 +29,7 @@ function animation() {
     });
     
 
-    if (direction === 1||brick===kRspan.length-1) { 
+    if (direction === 1 || brick===kRspan.length-1) { 
         kRspan[brick].style.boxShadow = '-15px 0px 47px 25px rgb(161, 0, 0), inset 0px 0px 10px 15px rgb(161, 0, 0)';
     } else {
         kRspan[brick].style.boxShadow = '15px 0px 47px 25px rgb(161, 0, 0), inset 0px 0px 10px 15px rgb(161, 0, 0)';
@@ -53,6 +53,7 @@ animation();
 
 let audio = new Audio('./audio/Intro.mp3');
 function playMusic() {
+    
     if (!audio || audio.paused) {
         audio.play();
     } else {
@@ -66,8 +67,14 @@ function playMusic() {
 
 let m = document.querySelectorAll('.k-r > span');
 m.forEach(span => {
-    span.addEventListener('click', playMusic);
+    
+    span.addEventListener('click', () => {
+        let filter = span.style.filter === 'contrast(200%)';
+        if (filter) {
+            playMusic();
+        };
+    });
    
     
-})
+});
 
