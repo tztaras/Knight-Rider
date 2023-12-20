@@ -23,7 +23,7 @@ function animation() {
 
 
     kRspan.forEach((item) => {
-        item.style.filter = 'contrast(50%)';
+        item.style.filter = 'contrast(70%)';
         item.style.boxShadow = 'inset 0 0 10px 4px #000000';
         item.style.border = 'none';
     });
