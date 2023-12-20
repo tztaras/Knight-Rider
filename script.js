@@ -49,3 +49,25 @@ function animation() {
 
 animation();
 
+
+
+let audio = new Audio('./audio/Intro.mp3');
+function playMusic() {
+    if (!audio || audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+        // Reset the audio to the beginning
+        audio.currentTime = 0; 
+    }
+    
+}
+
+
+let m = document.querySelectorAll('.k-r > span');
+m.forEach(span => {
+    span.addEventListener('click', playMusic);
+   
+    
+})
+
