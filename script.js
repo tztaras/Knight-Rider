@@ -1,3 +1,4 @@
+alert('Click the beam ;) | click the beam once again :)');
 let kR = document.querySelector('.k-r');
 (function spanCreation() {
     for (i = 0; i < 8; i++) {
