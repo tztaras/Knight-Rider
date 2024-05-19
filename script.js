@@ -73,3 +73,7 @@ m.forEach(span => {
     
 });
 
+
+let t1 = true ? true : false;
+console.log(t1);
+
