@@ -46,16 +46,16 @@ let kRspan = document.querySelectorAll('.k-r > span');
 })();
 
 
-let audio = new Audio('./audio/Intro.mp3');
+let leMusic = new Audio('./audio/Intro.mp3');
 
 function playMusic() {
     
-    if (!audio || audio.paused) {
-        audio.play();
+    if (!leMusic || leMusic.paused) {
+        leMusic.play();
     } else {
-        audio.pause();
+        leMusic.pause();
         // Reset the audio to the beginning
-        audio.currentTime = 0; 
+        leMusic.currentTime = 0; 
     }
     
 }
