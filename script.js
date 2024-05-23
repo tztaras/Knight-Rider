@@ -1,4 +1,5 @@
 alert('Click the beam ;) | click the beam once again :)');
+
 let kR = document.querySelector('.k-r');
 (function spanCreation() {
     for (i = 0; i < 8; i++) {
@@ -10,7 +11,6 @@ let kR = document.querySelector('.k-r');
 
 let brick = 0;
 let direction = 1;
-
 let kRspan = document.querySelectorAll('.k-r > span');
 (function animation() {
     if (brick === kRspan.length - 1) {
@@ -57,7 +57,6 @@ function playMusic() {
         // Reset the audio to the beginning
         leMusic.currentTime = 0; 
     }
-    
 }
 
 let m = document.querySelectorAll('.k-r > span');
@@ -69,8 +68,6 @@ m.forEach(span => {
             playMusic();
         };
     });
-   
-    
 });
 
 
