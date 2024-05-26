@@ -8,7 +8,6 @@ let kR = document.querySelector('.k-r');
     };
 })();
 
-
 let brick = 0;
 let direction = 1;
 let kRspan = document.querySelectorAll('.k-r > span');
@@ -20,7 +19,6 @@ let kRspan = document.querySelectorAll('.k-r > span');
         brick = 1;
         direction *= -1;
     }
-
 
     kRspan.forEach((item) => {
         item.style.filter = 'contrast(70%)';
@@ -42,7 +40,6 @@ let kRspan = document.querySelectorAll('.k-r > span');
     brick += direction;
     
     setTimeout(animation, 500);
-
 })();
 
 
@@ -61,7 +58,6 @@ function playMusic() {
 
 let m = document.querySelectorAll('.k-r > span');
 m.forEach(span => {
-    
     span.addEventListener('click', () => {
         let filter = span.style.filter === 'contrast(200%)';
         if (filter) {
@@ -70,7 +66,6 @@ m.forEach(span => {
     });
 });
 
-
-let t1 = true ? true : false;
-console.log(t1);
+// let t1 = true ? true : false;
+// console.log(t1);
 
